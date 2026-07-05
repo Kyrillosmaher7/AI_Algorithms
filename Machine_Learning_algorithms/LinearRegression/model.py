@@ -1,9 +1,10 @@
 import numpy as np
+from Neural_Networks.Model.model import Model
 from Neural_Networks.Losses.Loss import Loss
 from Neural_Networks.Losses.mse import MSELoss
 from Neural_Networks.Optimizars.optim import Optimizer
 from Neural_Networks.Optimizars.stochastic_gradient_descent import SGD
-class LinearRegressionModel:
+class LinearRegressionModel(Model):
     """
     Linear Regression Model using Gradient Descent
     
