@@ -8,4 +8,8 @@ class Loss:
         raise NotImplementedError("Forward method not implemented.")
 
     def backward(self, y_true: np.ndarray, y_pred: np.ndarray) -> np.ndarray:
+        """
+        it represents the gradient of the loss with respect to the predictions (y_pred).
+        This gradient is used to update the model's parameters during training.
+        """
         raise NotImplementedError("Backward method not implemented.")

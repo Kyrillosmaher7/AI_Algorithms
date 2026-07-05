@@ -19,4 +19,5 @@ class MSELoss(Loss):
         return np.mean((y_true - y_pred) ** 2)
 
     def backward(self, y_true: np.ndarray, y_pred: np.ndarray) -> np.ndarray:
+        # dloss/dy_pred = (-2/n) * (y_true - y_pred) which is equivilant to (2/n) * (y_pred - y_true)
         return 2 * (y_pred - y_true) / y_true.size
