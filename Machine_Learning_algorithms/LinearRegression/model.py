@@ -21,6 +21,7 @@ class LinearRegressionModel:
         self.bias = None     # Bias term b
 
     def fit(self, X: np.ndarray, y: np.ndarray, optimizer: Optimizer, loss_fn: Loss, epochs=1000, batch_size=None):
+
         """
         Train the linear regression model using gradient descent
         
@@ -148,3 +149,13 @@ class LinearRegressionModel:
             # Print progress every 100 epochs
             if epoch % 100 == 0:
                 print(f'Epoch {epoch}, Loss: {loss}')
+    
+
+    def predict(self, X):
+        """
+        Make predictions using the trained model
+        
+        Mathematical: ŷ = X·W + b
+        where W and b are the trained parameters
+        """
+        return np.dot(X, self.weights) + self.bias
