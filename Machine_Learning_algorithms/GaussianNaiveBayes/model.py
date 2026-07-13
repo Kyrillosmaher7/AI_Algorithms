@@ -1,7 +1,7 @@
-from Neural_Networks.Model.model import Model
+from Lib.Model.model import Model
 import numpy as np
-from Neural_Networks.Losses.Loss import Loss
-from Neural_Networks.Optimizars.optim import Optimizer
+from Lib.Losses.Loss import Loss
+from Lib.Optimizars.optim import Optimizer
 
 class GaussianNaiveBayesModel(Model):
     """

@@ -11,8 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 from .model import LinearRegressionModel as CustomLinearRegression
-from Neural_Networks.Losses.mse import MSELoss
-from Neural_Networks.Optimizars.stochastic_gradient_descent import SGD
+from Lib.Losses.mse import MSELoss
+from Lib.Optimizars.stochastic_gradient_descent import SGD
 
 
 def evaluate_model(name, y_true, y_pred):

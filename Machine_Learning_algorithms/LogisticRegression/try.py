@@ -15,8 +15,8 @@ from sklearn.preprocessing import StandardScaler
 from Machine_Learning_algorithms.LogisticRegression.model import (
     LogisticRegressionModel as CustomLogisticRegression,
 )
-from Neural_Networks.Losses.binary_cross_entropy import BinaryCrossEntropyLoss
-from Neural_Networks.Optimizars.stochastic_gradient_descent import SGD
+from Lib.Losses.binary_cross_entropy import BinaryCrossEntropyLoss
+from Lib.Optimizars.stochastic_gradient_descent import SGD
 
 
 def evaluate_model(name, y_true, y_pred):
